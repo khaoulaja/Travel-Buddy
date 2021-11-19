@@ -95,3 +95,10 @@ footer{
     margin-top: 10px;
     text-align: center;
 }
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+
+}
