@@ -8,6 +8,9 @@ body{
     margin: 0;
     padding: 0;
 }
+section{
+    padding: 40px;
+}
 h1, h2, h3, h4{
     font-family: 'Lora', serif;
     padding-bottom: 10px;
@@ -81,7 +84,12 @@ a:hover{
 }
 .hero-text h1{
 color: #fff;
-width: 50vw;
+width: 60vw;
+font-size: 4rem;
+text-align: center;
+}
+.span{
+    font-family: 'Lobster', cursive;
 }
 footer{
     /* padding: 30px; */
@@ -97,8 +105,26 @@ footer{
 }
 
 .section-title{
+    position: relative;
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
     padding: 30px;
 
+}
+.section-icon{
+    width: 140px;
+}
+.tabs-title>a[aria-selected=true] {
+    background: #FAF7F9;
+    color: #455d58;
+}
+
+.custom-tab{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: none;
+}
+.custom-tab li a{
+    font-size: 2rem;
 }
