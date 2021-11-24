@@ -17,7 +17,7 @@
     <header>
         <nav class="top-bar">
             <div class="top-bar-left">
-             <a href="/" class="">Travel Buddy</a>
+             <a href="/" class="title">Travel Buddy</a>
             </div>
             <div class="top-bar-right">
               <ul class="menu">
@@ -26,6 +26,7 @@
                 <li><a href="#italy">Italy</a></li>
                 <li><a href="#germany">Germany</a></li>
                 <li><a href="#netherlands">Netherlands</a></li>
+                <li><a href="#maps">Maps</a></li>
               </ul>
             </div>
           </nav>
@@ -39,18 +40,20 @@
     <!-- france -->
     <section id="france" class="padding-0">
         
-        <h2 class="section-title text-center width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> France <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+        <h2 class="section-title text-center width-50 padding-bottom-3"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> France <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
    
-      <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+      <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="france-tabs">
         <li class="tabs-title is-active"><a href="#france-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
         <li class="tabs-title"><a data-tabs-target="france-lang" href="#france-lang"><i class="fas fa-language"></i><br>Translation</a></li>
         <li class="tabs-title"><a data-tabs-target="france-gallery" href="#france-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
       </ul>
   
-      <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-content" data-tabs-content="france-tabs">
         <div class="tabs-panel is-active" id="france-info">
-          <p>one</p>
-          <p>Check me out! I'm a super cool Tab panel with text content!</p>
+          <div class="row">
+            <div class="columns medium-4"><img src="./assets/images/france/flag.jpg" alt=""></div>
+            <div class="columns small-8"></div>
+          </div> 
         </div>
         <div class="tabs-panel" id="france-lang">
           <p>two</p>
@@ -60,7 +63,7 @@
             <div class="flex">
                 <div class="columns medium-8"> 
                     <img src="./assets/images/france/paris.jpg" alt="">
-                    <h6>Paris, France</h6>
+                    <h6>Eiffel Tower - Paris, France</h6>
                 </div>
                 <div class="columns medium-4">
                     <img src="./assets/images/france/Arc-de-Triomphe-Paris-h.jpg" alt="">
@@ -96,7 +99,7 @@
     </section>
     <!-- spain -->
     <section id="spain" class="padding-0">
-        <h2 class="section-title text-center width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> Spain <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+        <h2 class="section-title text-center padding-bottom-3 width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> Spain <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
    
       <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="spain-tabs">
         <li class="tabs-title is-active"><a href="#spain-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
@@ -114,45 +117,34 @@
           <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-7.jpg">
         </div>
         <div class="tabs-panel " id="spain-gallery">
-            <!-- <div class="row padding-0">
-                <div class="columns medium-4"><img src="./assets/images/spain/barcelona.jpg" alt=""></div>
-                <div class="columns small-4"><img src="./assets/images/spain/granada-h.jpg" alt=""></div>
-                <div class="columns small-4"><img src="./assets/images/spain/madrid-h.jpg" alt=""></div>
-               </div> 
-               <div class="row">
-                <div class="columns small-4"><img src="./assets/images/spain/mijas-h.jpg" alt=""></div>
-                <div class="columns small-4"><img src="./assets/images/spain/sevilla.jpg" alt=""></div>
-                <div class="columns small-4"><img src="./assets/images/spain/Palafrugell.jpg" alt=""></div>
-              </div> -->
-           
             <div class="flex">
                 <div class="columns medium-8"> 
                     <img src="./assets/images/spain/barcelona.jpg" alt="">
-                    <h6>Barcelona</h6>
+                    <h6>Tibidabo Amusement Park - Barcelona, Spain</h6>
                 </div>
                 <div class="columns medium-4">
                     <img src="./assets/images/spain/madrid-h.jpg" alt="">
-                    <h6>Madrid</h6>
+                    <h6>Madrid, Spain</h6>
                 </div>
             </div>
             <div class="flex">
                 <div class="columns medium-4">
                     <img src="./assets/images/spain/granada-h.jpg" alt="">
-                    <h6>Granada</h6>
+                    <h6>Alhambra - Granada,Spain</h6>
                 </div>
                 <div class="columns medium-4 flex-col">
                     <div>
                         <img src="./assets/images/spain/sevilla.jpg" alt="">
-                        <h6>Sevilla</h6>
+                        <h6>Sevilla, Spain</h6>
                     </div>
                     <div>
                         <img src="./assets/images/spain/Palafrugell.jpg" alt="">
-                        <h6>Palafrugell</h6>
+                        <h6>Palafrugell, Spain</h6>
                     </div>
                 </div>
                 <div class="columns medium-4">
                     <img src="./assets/images/spain/mijas-h.jpg" alt="">
-                    <h6>Mijas</h6>
+                    <h6>Mijas, Spain</h6>
                 </div>
                
             </div> 
@@ -164,7 +156,7 @@
     </section>
     <!-- italy -->
     <section id="italy" class="padding-0">
-        <h2 class="section-title text-center width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> Italy <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+        <h2 class="section-title text-center width-50 padding-bottom-3"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> Italy <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
    
       <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="italy-tabs">
         <li class="tabs-title is-active"><a href="#italy-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
@@ -218,7 +210,7 @@
     </div>
     </section>
     <section id="germany" class="padding-0">
-        <h2 class="section-title text-center width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> germany <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+        <h2 class="section-title text-center padding-bottom-3 width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> germany <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
    
       <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="germany-tabs">
         <li class="tabs-title is-active"><a href="#germany-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
@@ -272,7 +264,7 @@
     </div>
     </section>
     <section id="netherlands" class="padding-0">
-        <h2 class="section-title text-center width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> netherlands <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
+        <h2 class="section-title text-center width-50 padding-bottom-3"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> netherlands <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
    
       <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="netherlands-tabs">
         <li class="tabs-title is-active"><a href="#netherlands-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
@@ -359,3 +351,13 @@
     <script>$(document).foundation();</script>   
 </body>
 </html>
+            <!-- <div class="row padding-0">
+                <div class="columns medium-4"><img src="./assets/images/spain/barcelona.jpg" alt=""></div>
+                <div class="columns small-8"><img src="./assets/images/spain/granada-h.jpg" alt=""></div>
+                <div class="columns small-4"><img src="./assets/images/spain/madrid-h.jpg" alt=""></div>
+               </div> 
+               
+               <div class="row">
+               
+              </div> -->
+           
