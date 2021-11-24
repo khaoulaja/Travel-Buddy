@@ -16,12 +16,12 @@ function svgMapWrapper(svgPanZoom) {
       maxZoom: 25,
 
       // Initial zoom
-      initialZoom: 1.06,
+      initialZoom: 23,
 
       // Initial pan
       initialPan: {
         x: 0,
-        y: 0
+        y: 200
       },
 
       // Zoom sensitivity
@@ -235,7 +235,7 @@ function svgMapWrapper(svgPanZoom) {
     IE: 'Ireland',
     IM: 'Isle of Man',
     IL: 'Israel',
-    IT: 'Italy',
+   
     CI: 'Ivory Coast',
     JM: 'Jamaica',
     JP: 'Japan',

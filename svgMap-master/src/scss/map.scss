@@ -10,7 +10,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(244, 247, 241, 0.2);
   pointer-events: none;
   opacity: 0;
   color: #fff;
@@ -74,7 +74,7 @@
     display: flex;
     overflow: hidden;
     border-radius: 2px;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 2px rgba(35, 236, 243, 0.1);
   }
 
   .svgMap-map-controls-zoom,
@@ -116,7 +116,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: #666;
+        background: rgb(126, 8, 8);
         transition: background-color 250ms;
       }
 
@@ -166,7 +166,7 @@
   // Countries
 
   .svgMap-country {
-    stroke: #fff;
+    stroke: rgb(77, 163, 20);
     stroke-width: 1;
     stroke-linejoin: round;
     vector-effect: non-scaling-stroke;
