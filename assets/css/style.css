@@ -128,3 +128,13 @@ footer{
 .custom-tab li a{
     font-size: 2rem;
 }
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-;
+}
