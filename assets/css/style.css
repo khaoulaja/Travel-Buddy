@@ -154,3 +154,21 @@ footer{
     flex-direction: column;
     
 }
+.list-style-image{
+list-style-image: url('../images/list-style.png');
+}
+.list-style-image li{
+    font-size: 1.4rem;
+}
+.p-2{
+    padding: 2rem;
+}
+ .intro{
+     margin-bottom: 1rem;
+     font-size: 1.4rem;
+ }
+ .intro::first-letter{
+     font-size: 200%;
+     font-weight: 600;
+     font-family: 'Lora' ,serif ;
+ }
