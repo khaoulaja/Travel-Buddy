@@ -15,12 +15,16 @@
 </head>
 <body>
     <header>
-        <nav class="top-bar">
+      <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="large">
+        <div class="title-bar-title">Travel Buddy</div>
+        <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+      </div>
+        <nav class="top-bar" id="main-nav">
             <div class="top-bar-left">
              <a href="/" class="title">Travel Buddy</a>
             </div>
             <div class="top-bar-right">
-              <ul class="menu">
+              <ul class="menu vertical large-horizontal">
                 <li><a href="#france">France</a></li>
                 <li><a href="#spain">Spain</a></li>
                 <li><a href="#italy">Italy</a></li>
@@ -42,7 +46,7 @@
         
         <h2 class="section-title text-center width-50 padding-bottom-3"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> France <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
    
-      <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="france-tabs">
+      <ul class="tabs custom-tab" data-tabs id="france-tabs">
         <li class="tabs-title is-active"><a href="#france-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
         <li class="tabs-title"><a data-tabs-target="france-lang" href="#france-lang"><i class="fas fa-language"></i><br>Translation</a></li>
         <li class="tabs-title"><a data-tabs-target="france-gallery" href="#france-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
@@ -51,8 +55,8 @@
       <div class="tabs-content" data-tabs-content="france-tabs">
         <div class="tabs-panel is-active padding-3" id="france-info">
           <div class="flex p-2">
-            <div class="columns medium-4"><img src="./assets/images/france/flag.jpg" alt=""></div>
-            <div class="columns small-8">
+            <div class="columns medium-4 flag"><img src="./assets/images/france/flag.jpg" alt=""></div>
+            <div class="columns medium-8">
               <div class="intro">France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine.
 
               </div>
@@ -66,8 +70,29 @@
           </div> 
         </div>
         <div class="tabs-panel" id="france-lang">
-          <p>two</p>
-          <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-7.jpg">
+          <div class="trans-tab flex ">
+           <div class="columns p-2"> Most useful phrases in French: </div>
+            <div class="columns medium-5">
+              <ul class="no-bullet trans-li">
+                <li>  <button><i class="fas fa-play-circle"></i></button>  Hello! </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>  Thank you! </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>  Excuse me. </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>  Where is __? </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>  I need __. </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>  Help! </li>
+              </ul>
+            </div>
+            <div class="columns medium-6">
+              <ul class="no-bullet trans-li">
+                <li>  <button><i class="fas fa-play-circle"></i></button>   I don't speak french. </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>   Do you speak english?  </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>   I'm allergic to __. </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the bathroom? </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the pharmacy? </li>
+                <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the ATM? </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="tabs-panel" id="france-gallery">
             <div class="flex">
@@ -111,7 +136,7 @@
     <section id="spain" class="padding-0">
         <h2 class="section-title text-center padding-bottom-3 width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> Spain <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
    
-      <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="spain-tabs">
+      <ul class="tabs custom-tab" data-tabs id="spain-tabs">
         <li class="tabs-title is-active"><a href="#spain-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
         <li class="tabs-title"><a data-tabs-target="spain-lang" href="#spain-lang"><i class="fas fa-language"></i><br>Translation</a></li>
         <li class="tabs-title"><a data-tabs-target="spain-gallery" href="#spain-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
@@ -121,7 +146,7 @@
         <div class="tabs-panel is-active" id="spain-info">
           <div class="flex p-2">
             
-            <div class="columns small-8">
+            <div class="columns large-8">
               <div class="intro">Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct.
 
               </div>
@@ -132,12 +157,33 @@
                 <li>Spoken Language: <span></span></li>
               </ul>
             </div>
-            <div class="columns medium-4"><img src="./assets/images/spain/flag.jpg" alt=""></div>
+            <div class="columns medium-4 flag"><img src="./assets/images/spain/flag.jpg" alt=""></div>
           </div> 
         </div>
         <div class="tabs-panel" id="spain-lang">
-          <p>two</p>
-          <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-7.jpg">
+          <div class="trans-tab flex ">
+            <div class="columns p-2"> Most useful phrases in Spanish: </div>
+             <div class="columns medium-5">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Hello! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Thank you! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Excuse me. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Where is __? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  I need __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Help! </li>
+               </ul>
+             </div>
+             <div class="columns medium-6">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I don't speak spanich. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Do you speak english?  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I'm allergic to __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the bathroom? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the pharmacy? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the ATM? </li>
+               </ul>
+             </div>
+           </div>
         </div>
         <div class="tabs-panel " id="spain-gallery">
             <div class="flex">
@@ -181,7 +227,7 @@
     <section id="italy" class="padding-0">
         <h2 class="section-title text-center width-50 padding-bottom-3"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> Italy <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
    
-      <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="italy-tabs">
+      <ul class="tabs custom-tab" data-tabs id="italy-tabs">
         <li class="tabs-title is-active"><a href="#italy-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
         <li class="tabs-title"><a data-tabs-target="italy-lang" href="#italy-lang"><i class="fas fa-language"></i><br>Translation</a></li>
         <li class="tabs-title"><a data-tabs-target="italy-gallery" href="#italy-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
@@ -190,8 +236,8 @@
       <div class="tabs-content" data-tabs-content="italy-tabs">
         <div class="tabs-panel is-active" id="italy-info">
           <div class="flex p-2">
-            <div class="columns medium-4"><img src="./assets/images/italy/flag.jpg" alt=""></div>
-            <div class="columns small-8">
+            <div class="columns medium-4 flag"><img src="./assets/images/italy/flag.jpg" alt=""></div>
+            <div class="columns medium-8">
               <div class="intro">Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s "David" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.
 
               </div>
@@ -205,8 +251,29 @@
           </div> 
         </div>
         <div class="tabs-panel" id="italy-lang">
-          <p>two</p>
-          <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-7.jpg">
+          <div class="trans-tab flex ">
+            <div class="columns p-2"> Most useful phrases in Italian: </div>
+             <div class="columns medium-5">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Hello! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Thank you! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Excuse me. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Where is __? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  I need __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Help! </li>
+               </ul>
+             </div>
+             <div class="columns medium-6">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I don't speak italian. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Do you speak english?  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I'm allergic to __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the bathroom? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the pharmacy? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the ATM? </li>
+               </ul>
+             </div>
+           </div>
         </div>
         <div class="tabs-panel" id="italy-gallery">
             <div class="flex">
@@ -247,7 +314,7 @@
     <section id="germany" class="padding-0">
         <h2 class="section-title text-center padding-bottom-3 width-50"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> germany <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
    
-      <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="germany-tabs">
+      <ul class="tabs custom-tab" data-tabs="" id="germany-tabs">
         <li class="tabs-title is-active"><a href="#germany-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
         <li class="tabs-title"><a data-tabs-target="germany-lang" href="#germany-lang"><i class="fas fa-language"></i><br>Translation</a></li>
         <li class="tabs-title"><a data-tabs-target="germany-gallery" href="#germany-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
@@ -256,7 +323,7 @@
       <div class="tabs-content" data-tabs-content="germany-tabs">
         <div class="tabs-panel is-active" id="germany-info">
           <div class="flex p-2">
-            <div class="columns small-8">
+            <div class="columns medium-8">
               <div class="intro">Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.
               </div>
               <ul class="list-style-image">
@@ -266,12 +333,33 @@
                 <li>Spoken Language: <span></span></li>
               </ul>
             </div>
-            <div class="columns medium-4"><img src="./assets/images/germany/flag.jpg" alt=""></div>
+            <div class="columns medium-4 flag"><img src="./assets/images/germany/flag.jpg" alt=""></div>
           </div> 
         </div>
         <div class="tabs-panel" id="germany-lang">
-          <p>two</p>
-          <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-7.jpg">
+          <div class="trans-tab flex ">
+            <div class="columns p-2"> Most useful phrases in German: </div>
+             <div class="columns medium-5">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Hello! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Thank you! </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Excuse me. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Where is __? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  I need __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Help! </li>
+               </ul>
+             </div>
+             <div class="columns medium-6">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I don't speak german. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Do you speak english?  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I'm allergic to __. </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the bathroom? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the pharmacy? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the ATM? </li>
+               </ul>
+             </div>
+           </div>
         </div>
         <div class="tabs-panel" id="germany-gallery">
             <div class="flex">
@@ -312,7 +400,7 @@
     <section id="netherlands" class="padding-0">
         <h2 class="section-title text-center width-50 padding-bottom-3"><span><img class="section-icon" src="./assets/images/swirl-vine-left.png" alt=""></span> netherlands <span><img class="section-icon" src="./assets/images/swirl-vine-right.png" alt=""></span></h2>
    
-      <ul class="tabs custom-tab" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="netherlands-tabs">
+      <ul class="tabs custom-tab" data-tabs id="netherlands-tabs">
         <li class="tabs-title is-active"><a href="#netherlands-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>Information</a></li>
         <li class="tabs-title"><a data-tabs-target="netherlands-lang" href="#netherlands-lang"><i class="fas fa-language"></i><br>Translation</a></li>
         <li class="tabs-title"><a data-tabs-target="netherlands-gallery" href="#netherlands-gallery"><i class="far fa-images"></i><br>Gallery</a></li>
@@ -321,8 +409,8 @@
       <div class="tabs-content" data-tabs-content="netherlands-tabs">
         <div class="tabs-panel is-active" id="netherlands-info">
           <div class="flex p-2">
-            <div class="columns medium-4"><img src="./assets/images/netherlands/flag.jpg" alt=""></div>
-            <div class="columns small-8">
+            <div class="columns medium-4 flag"><img src="./assets/images/netherlands/flag.jpg" alt=""></div>
+            <div class="columns medium-8">
               <div class="intro">Netherlands, a country in northwestern Europe, is known for a flat landscape of canals, tulip fields, windmills and cycling routes. Amsterdam, the capital, is home to the Rijksmuseum, Van Gogh Museum and the house where Jewish diarist Anne Frank hid during WWII. Canalside mansions and a trove of works from artists including Rembrandt and Vermeer remain from the city's 17th-century "Golden Age."
 
               </div>
@@ -336,8 +424,29 @@
           </div> 
         </div>
         <div class="tabs-panel" id="netherlands-lang">
-          <p>two</p>
-          <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-7.jpg">
+          <div class="trans-tab flex ">
+            <div class="columns p-2"> Most useful phrases in Dutch: </div>
+             <div class="columns medium-5">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Hello!      </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Thank you!  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Excuse me.    </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Where is __? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  I need __.  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>  Help!       </li>
+               </ul>
+             </div>
+             <div class="columns medium-6">
+               <ul class="no-bullet trans-li">
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I don't speak dutch.   </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Do you speak english?  </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   I'm allergic to __.    </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the bathroom? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the pharmacy? </li>
+                 <li>  <button><i class="fas fa-play-circle"></i></button>   Where is the ATM?      </li>
+               </ul>
+             </div>
+           </div>
         </div>
         <div class="tabs-panel" id="netherlands-gallery">
             <div class="flex">
@@ -392,21 +501,21 @@
                 <a href="/index.html" class="white-text"> Countries</a>
             </h3>
             <ul class="no-bullet">
-                <li><a href="" class="white-text">France</a></li>
-                <li><a href="" class="white-text">Spain</a></li>
-                <li><a href="" class="white-text">Italy</a></li>
-                <li><a href="" class="white-text">Germany</a></li>
-                <li><a href="" class="white-text">Netherlands</a></li>
+                <li><a href="#france" class="white-text">France</a></li>
+                <li><a href="#spain" class="white-text">Spain</a></li>
+                <li><a href="#italy" class="white-text">Italy</a></li>
+                <li><a href="#germany" class="white-text">Germany</a></li>
+                <li><a href="netherlands" class="white-text">Netherlands</a></li>
             </ul>
         </div>
     </div>    
         <div class="center-align gray-text copy-right">
             
-            &copy; 2021 Travel Buddy | Made by : Javarris Barnett, Raniah Jeanlys, Kenneth Dodd and Khaoula Jabour.
+            &copy; 2021 Travel Buddy | Made by : Khaoula Jabour, Javarris Barnett, Raniah Jeanlys and Kenneth Dodd.
             
         </div>
     </footer>
-    
+
     <script src="./assets/js/vendor/jquery.js"></script>
     <script src="./assets/js/vendor/what-input.js"></script>
     <script src="./assets/js/vendor/foundation.min.js"></script>
@@ -414,6 +523,7 @@
     <script>$(document).foundation();</script>   
 </body>
 </html>
+
             <!-- <div class="row padding-0">
                 <div class="columns medium-4"><img src="./assets/images/spain/barcelona.jpg" alt=""></div>
                 <div class="columns small-8"><img src="./assets/images/spain/granada-h.jpg" alt=""></div>
