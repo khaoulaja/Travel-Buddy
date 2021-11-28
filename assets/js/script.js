@@ -1,5 +1,5 @@
 var areaName = document.querySelector("#area");
-var capitalName = document.querySelector("#capital");
+var capitalName = document.querySelector("#capitol");
 var langaugeName = document.querySelector("#language");
 var currencyName = document.querySelector("#currency");
 var areaNameOne = document.querySelector("#area1");
@@ -29,16 +29,17 @@ var getSpain = function () {
 
             var array = data[102].area;
             console.log(data);
-            var cap = data[102].capital[0];
+            var capitol = data[102].capital[0];
+            console.log(capitol);
             var diction = data[102].languages['spa'];
             console.log(diction);
             var money = data[102].currencies['EUR'].name;
             console.log(money);
 
             areaName.innerHTML = `Area: ${array}`;
-            capitalName.innerHtml = `Capital: ${cap}`;
+            capitalName.innerHTML = `Capital: ${capitol}`;
             langaugeName.innerHTML = `Language: ${diction}`
-            currencyName.innerHtml = `Currency: ${money}`
+            currencyName.innerHTML = `Currency: ${money}`
 
         });
 };
@@ -57,9 +58,9 @@ var getGermany = function () {
             console.log(money1);
 
             areaNameOne.innerHTML = `Area: ${array1}`;
-            capitalNameOne.innerHtml = `Capital: ${cap1}`;
+            capitalNameOne.innerHTML = `Capital: ${cap1}`;
             languageNameOne.innerHTML = `Language: ${diction1}`
-            currencyNameOne.innerHtml = `Currency: ${money1}`
+            currencyNameOne.innerHTML = `Currency: ${money1}`
 
         });
 };
@@ -80,9 +81,9 @@ var getFrance = function () {
             console.log(money2);
 
             areaNameTwo.innerHTML = `Area: ${array2}`;
-            capitalNameTwo.innerHtml = `Capital: ${cap2}`;
+            capitalNameTwo.innerHTML = `Capital: ${cap2}`;
             languageNameTwo.innerHTML = `Language: ${diction2}`
-            currencyNameTwo.innerHtml = `Currency: ${money2}`
+            currencyNameTwo.innerHTML = `Currency: ${money2}`
 
         });
 };
@@ -103,9 +104,9 @@ var getItaly = function () {
             console.log(money3);
 
             areaNameThree.innerHTML = `Area: ${array3}`;
-            capitalNameThree.innerHtml = `Capital: ${cap3}`;
+            capitalNameThree.innerHTML = `Capital: ${cap3}`;
             languageNameThree.innerHTML = `Language: ${diction3}`
-            currencyNameThree.innerHtml = `Currency: ${money3}`
+            currencyNameThree.innerHTML = `Currency: ${money3}`
 
         });
 };
@@ -124,9 +125,9 @@ var getNether = function () {
             console.log(money4);
 
             areaNameFour.innerHTML = `Area: ${array4}`;
-            capitalNameFour.innerHtml = `Capital: ${cap4}`;
+            capitalNameFour.innerHTML = `Capital: ${cap4}`;
             languageNameFour.innerHTML = `Language: ${diction4}`
-            currencyNameFour.innerHtml = `Currency: ${money4}`
+            currencyNameFour.innerHTML = `Currency: ${money4}`
 
         });
 };
