@@ -1,5 +1,5 @@
 var areaName = document.querySelector("#area");
-var capitalName = document.querySelector("#capitol");
+var capitalName = document.querySelector("#capital");
 var langaugeName = document.querySelector("#language");
 var currencyName = document.querySelector("#currency");
 var areaNameOne = document.querySelector("#area1");
@@ -29,15 +29,15 @@ var getSpain = function () {
 
             var array = data[102].area;
             console.log(data);
-            var capitol = data[102].capital[0];
-            console.log(capitol);
+            var cap = data[102].capital[0];
+            console.log(cap);
             var diction = data[102].languages['spa'];
             console.log(diction);
             var money = data[102].currencies['EUR'].name;
             console.log(money);
 
             areaName.innerHTML = `Area: ${array}`;
-            capitalName.innerHTML = `Capital: ${capitol}`;
+            capitalName.innerHTML = `Capital: ${cap}`;
             langaugeName.innerHTML = `Language: ${diction}`
             currencyName.innerHTML = `Currency: ${money}`
 
