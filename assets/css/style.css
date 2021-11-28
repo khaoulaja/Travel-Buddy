@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Darker Grotesque', sans-serif;
+    color: #455d58;
+    background-color: #faf7f2;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4{
+    font-family: 'Lora', serif;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+a:hover{
+    color: #a0a9a7;
+}
+.white-text{
+    color: #fff;
+}
+.gray-text{
+    color: #a0a9a7;
+}
+.text-center{
+    text-align: center;
+}
+.top-bar{
+    background-color: transparent;
+    padding: 20px 40px;
+}
+.top-bar ul {
+    background-color: transparent;
+}
+.top-bar-left a{
+    color: #fff;
+    font-size: 2rem;
+}
+.menu a{
+    color: #fff;
+    font-size: 1.6rem;
+}
+.menu a:hover{
+    text-shadow: 0px 0px 10px black;
+    border-bottom-style: outset;
+    transform: translate(1px);
+    transition: 0.3s;
+}
+.jumbotron{
+    position: relative;
+    background-image: url(../images/travel-buddy.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jumbotron >*{
+    /* /position: relative; */
+    z-index: 3;
+}
+.jumbotron::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+.hero-text h1{
+color: #fff;
+width: 50vw;
+}
+footer{
+    /* padding: 30px; */
+    color: #fff;
+    background-color: #223531;
+    padding-top: 20px;
+}
+.copy-right{
+    background-color: #455d58;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
