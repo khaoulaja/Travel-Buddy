@@ -30,6 +30,7 @@ var getSpain = function () {
             var array = data[102].area;
             console.log(data);
             var cap = data[102].capital[0];
+            console.log(cap);
             var diction = data[102].languages['spa'];
             console.log(diction);
             var money = data[102].currencies['EUR'].name;
