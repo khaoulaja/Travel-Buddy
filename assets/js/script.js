@@ -1,23 +1,23 @@
-var areaName = document.querySelector("#area");
-var capitalName = document.querySelector("#capital");
-var langaugeName = document.querySelector("#language");
-var currencyName = document.querySelector("#currency");
-var areaNameOne = document.querySelector("#area1");
-var capitalNameOne = document.querySelector("#capital1");
-var languageNameOne = document.querySelector("#language1");
-var currencyNameOne = document.querySelector("#currency1");
-var areaNameTwo = document.querySelector("#area2");
-var capitalNameTwo = document.querySelector("#capital2");
-var languageNameTwo = document.querySelector("#language2");
-var currencyNameTwo = document.querySelector("#currency2");
-var areaNameThree = document.querySelector("#area3");
-var capitalNameThree = document.querySelector("#capital3");
-var languageNameThree = document.querySelector("#language3");
-var currencyNameThree = document.querySelector("#currency3");
-var areaNameFour = document.querySelector("#area4");
-var capitalNameFour = document.querySelector("#capital4");
-var languageNameFour = document.querySelector("#language4");
-var currencyNameFour = document.querySelector("#currency4");
+var areaSpain = document.querySelector("#area-spain");
+var capitalSpain = document.querySelector("#capital-spain");
+var langaugeSpain = document.querySelector("#language-spain");
+var currencySpain = document.querySelector("#currency-spain");
+var areaGermany = document.querySelector("#area-germany");
+var capitalGermany = document.querySelector("#capital-germany");
+var languageGermany = document.querySelector("#language-germany");
+var currencyGermany = document.querySelector("#currency-germany");
+var areaFrance = document.querySelector("#area-france");
+var capitalFrance = document.querySelector("#capital-france");
+var languageFrance = document.querySelector("#language-france");
+var currencyFrance = document.querySelector("#currency-france");
+var areaItaly = document.querySelector("#area-italy");
+var capitalItaly = document.querySelector("#capital-italy");
+var languageItaly = document.querySelector("#language-italy");
+var currencyItaly = document.querySelector("#currency-italy");
+var areaNether = document.querySelector("#area-netherlands");
+var capitalNether = document.querySelector("#capital-netherlands");
+var languageNether = document.querySelector("#language-netherlands");
+var currencyNether = document.querySelector("#currency-netherlands");
 
 var apiUrl = "https://restcountries.com/v3.1/all"
 var bpiUrl = "https://libretranslate.com/";
@@ -35,10 +35,10 @@ var getSpain = function () {
             var money = data[102].currencies['EUR'].name;
             console.log(money);
 
-            areaName.innerHTML = `Area: ${array}`;
-            capitalName.innerHtml = `Capital: ${cap}`;
-            langaugeName.innerHTML = `Language: ${diction}`
-            currencyName.innerHtml = `Currency: ${money}`
+            areaSpain.innerHTML = `${array}`;
+            capitalSpain.innerHTML = `${cap}`;
+            langaugeSpain.innerHTML = `${diction}`
+            currencySpain.innerHTML = `${money}`
 
         });
 };
@@ -56,10 +56,10 @@ var getGermany = function () {
             var money1 = data[174].currencies['EUR'].name;
             console.log(money1);
 
-            areaNameOne.innerHTML = `Area: ${array1}`;
-            capitalNameOne.innerHtml = `Capital: ${cap1}`;
-            languageNameOne.innerHTML = `Language: ${diction1}`
-            currencyNameOne.innerHtml = `Currency: ${money1}`
+            areaGermany.innerHTML = `${array1}`;
+            capitalGermany.innerHTML = `${cap1}`;
+            languageGermany.innerHTML = `${diction1}`
+            currencyGermany.innerHTML = `${money1}`
 
         });
 };
@@ -79,10 +79,10 @@ var getFrance = function () {
             var money2 = data[120].currencies['EUR'].name;
             console.log(money2);
 
-            areaNameTwo.innerHTML = `Area: ${array2}`;
-            capitalNameTwo.innerHtml = `Capital: ${cap2}`;
-            languageNameTwo.innerHTML = `Language: ${diction2}`
-            currencyNameTwo.innerHtml = `Currency: ${money2}`
+            areaFrance.innerHTML = `${array2}`;
+            capitalFrance.innerHTML = `${cap2}`;
+            languageFrance.innerHTML = `${diction2}`
+            currencyFrance.innerHTML = `${money2}`
 
         });
 };
@@ -102,10 +102,10 @@ var getItaly = function () {
             var money3 = data[165].currencies['EUR'].name;
             console.log(money3);
 
-            areaNameThree.innerHTML = `Area: ${array3}`;
-            capitalNameThree.innerHtml = `Capital: ${cap3}`;
-            languageNameThree.innerHTML = `Language: ${diction3}`
-            currencyNameThree.innerHtml = `Currency: ${money3}`
+            areaItaly.innerHTML = `${array3}`;
+            capitalItaly.innerHTML = `${cap3}`;
+            languageItaly.innerHTML = `${diction3}`
+            currencyItaly.innerHTML = `${money3}`
 
         });
 };
@@ -123,10 +123,10 @@ var getNether = function () {
             var money4 = data[241].currencies['EUR'].name;
             console.log(money4);
 
-            areaNameFour.innerHTML = `Area: ${array4}`;
-            capitalNameFour.innerHtml = `Capital: ${cap4}`;
-            languageNameFour.innerHTML = `Language: ${diction4}`
-            currencyNameFour.innerHtml = `Currency: ${money4}`
+            areaNether.innerHTML = `${array4}`;
+            capitalNether.innerHTML = `${cap4}`;
+            languageNether.innerHTML = `${diction4}`
+            currencyNether.innerHTML = `${money4}`
 
         });
 };
