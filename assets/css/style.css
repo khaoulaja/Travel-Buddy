@@ -183,7 +183,46 @@ list-style-image: url('../images/list-style.png');
      font-weight: 600;
      font-family: 'Lora' ,serif ;
  }
+/* map style */
 
+svg path {
+    fill: #223531;
+    stroke: #eee;
+    stroke-width: .25;
+}
+
+svg path:hover {
+    fill: #455d58;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+#DE {
+    fill:#e0d68a;
+}
+#DE:hover{
+    fill: #455d58;
+}
+.France {
+    fill: #e0d68a;
+}
+
+#ES {
+    fill: #e0d68a;
+}
+#ES:hover{
+    fill: #455d58;
+}
+#NL {
+    fill: #e0d68a;
+}
+#NL:hover{
+    fill: #455d58;
+}
+
+.Italy {
+    fill: #e0d68a;
+}
 
  @media screen and (max-width: 1024px) {
      section{
