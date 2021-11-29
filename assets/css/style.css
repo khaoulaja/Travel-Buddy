@@ -273,6 +273,9 @@ svg path:hover {
      section{
          padding: 30px;
      }
+     button{
+        padding: 0;
+    }
     .hero-text h1{
         font-size: 2.5rem;
     }
@@ -298,9 +301,6 @@ svg path:hover {
  @media screen and (max-width: 370px) {
     section{
         padding: 20px;
-    }
-    button{
-        padding: 0;
     }
     .hero-text h1{
         font-size: 2.2rem;
